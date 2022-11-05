@@ -1,0 +1,36 @@
+.container {
+    max-width: 36rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backToHome {
+    margin: 3rem 0 0;
+}
+
+.box {
+    display: flex;
+    padding: 1rem;
+    margin: 3rem auto 6rem;
+    color: black;
+    box-shadow: 5px 5px 5px 5px antiquewhite;
+    border-radius: 25px;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: LightCyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    box-shadow: 5px 5px 20px 5px cornflowerblue;
+}
