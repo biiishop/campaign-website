@@ -10,11 +10,11 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to bals!
+          Welcome!
         </h1>
 
         <p className="description">
-          Vote for us or bad smh!!!
+          Vote for us!!!
         </p>
 
         <div className="grid">
@@ -33,7 +33,7 @@ export default function Home() {
           
 		  <a href="/contact" className="card">
             <h3>Contact Us!</h3>
-            <p>Idk why'd you'd want to we're pretty lame ngl.</p>
+            <p>yes</p>
           </a>
 
 		  <a target="_blank" href="https://vote.stuysu.org/" className='card'>
@@ -44,8 +44,7 @@ export default function Home() {
       </main>
 
       <footer>
-        ur less ugly than trisetsan
-      </footer>
+hi      </footer>
 
       <style jsx>{`
         .container {
