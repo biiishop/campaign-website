@@ -11,16 +11,17 @@ export const siteTitle = 'Title';
 export default function Layout({ children, home }) {
     return (
 		<>
-		<div class="topnav">
+		{/* <div className="topnav">
 		<a href="/">Home</a>
 		<a href="/policies">Policies</a>
 		<a href="/socials">Social Media</a>
 		<a href="/contact">Contact Us</a>
-		</div>
-
+		</div> */}
 		<Head>
 			<title>{siteTitle}</title>
 		</Head>
+		
+
 		<main>{children}</main>
 		</>
 	);

@@ -10,7 +10,7 @@ export default function Contact() {
     	      Contact Us!
 	        </h1>
 			<p className='body-text'>
-				ajdhskijdshaasdadsa
+				ajdhskijdshaasdadsa 
 			</p>
 			</div>
 		</Layout>
