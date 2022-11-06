@@ -29,6 +29,9 @@
     border-radius: 9999px;
 }
 
+.center {
+	align-content: center;
+}
 .colorInherit {
     color: inherit;
 }
