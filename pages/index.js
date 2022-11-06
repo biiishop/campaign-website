@@ -39,7 +39,7 @@ export default function Home() {
       </main>
 
       <footer>
-        jimmy's ugly
+        ur less ugly than trisetsan
       </footer>
 
       <style jsx>{`
