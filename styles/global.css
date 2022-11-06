@@ -6,6 +6,7 @@ body {
 			Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 		line-height: 1.6;
 		font-size: 18px;
+	background-color: lightblue;
 }
 
 * {
@@ -34,23 +35,119 @@ img {
 	align-items: center;
 }
 
-.sidebar {
-	height: 85%;
-	width: 150px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	padding-top: 10px;
-		/* background-color: lightblue; */
+.title {
+	margin: 0;
+	line-height: 1.15;
+	font-size: 4rem;
 }
 
-.sidebar div {
-	padding: 8px;
-	font-size: 24px;
+.title,
+.description {
+	text-align: center;
+}
+
+.topnav {
+	overflow: hidden;
+	/* background-color:azure; */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	font-family: Cardo;
 	display: block;
+		margin-top: 1rem;
+			margin-bottom: 1rem;
+			margin-left: 1rem;
+			margin-right: 1rem;
+			background-color: lightcoral;
+			border-radius: 15px;
+			color: black;
+			text-align: center;
+			padding: 14px 18px;
+			text-decoration: none;
+			font-size: 17px;
+			top: 0;
+		}
+		
+		/* Change the color of links on hover */
+		.topnav a:hover {
+			background-color: coral;
+			color: black;
+			box-shadow: 3px 3px 15px grey;
+		}
+		
+		/* Add a color to the active/current link */
+		.topnav a.active {
+			background-color: #04AA6D;
+			color: white;
 }
 
 .body-text {
-	margin-left: 150px;
-	font-size: 18px;
+	margin-left: 8rem;
+		margin-right: 8rem;
+		flex-basis: 45%;
+		padding: 1.5rem;
+		text-align: left;
+		/* margin: 1.5rem; */
+		background-color: white;
+		border: 1px solid #eaeaea;
+		border-radius: 5px;
+		box-shadow: 3px 3px 3px rgb(219, 219, 219);
+	}
+	
+	.body-text p {
+		margin: 0;
+		font-size: 1.25rem;
+		line-height: 1.5;
+	}
+	
+	.grid {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	
+		max-width: 800px;
+		margin-top: 3rem;
+	}
+	
+	.card {
+		margin: 1rem;
+		flex-basis: 45%;
+		padding: 1.5rem;
+		text-align: left;
+		color: inherit;
+		text-decoration: none;
+		border: 1px solid #eaeaea;
+		border-radius: 10px;
+		transition: color 0.15s ease, border-color 0.15s ease;
+	}
+	
+	.card:hover,
+	.card:focus,
+	.card:active {
+		color: #0070f3;
+		box-shadow: 0 1px 20px rgba(0, 0, 0, 0.15);
+	}
+	
+	.card::after {
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out;
+	}
+	
+	.card:hover::after {
+		opacity: 1;
+	}
+	
+	.card h3 {
+		margin: 0 0 1rem 0;
+		font-size: 1.5rem;
+}
+
+.card p {
+	margin: 0;
+	font-size: 1.25rem;
+	line-height: 1.5;
 }

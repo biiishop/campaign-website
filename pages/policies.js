@@ -8,7 +8,7 @@ export default function Policies() {
 			<Head>
 				<title>First Post</title>
 			</Head>
-		<p>uahfiashd</p>
+			<p className='body-text'>Write Here</p>
 		</Layout>
 	);
 }
