@@ -10,14 +10,14 @@ export const siteTitle = 'Title';
 export default function Layout({ children, home }) {
     return (
 		<div class="sidebar">
-		<div><Link href="/">Home</Link></div>
-		<div><Link href="/policies">Policies</Link></div>
-		<div><Link href="/socials">Social Media</Link></div>
+		<div><Link className='card' href="/">Home</Link></div>
+		<div><Link className='card' href="/policies">Policies</Link></div>
+		<div><Link className='card' href="/socials">Social Media</Link></div>
 			<div className="container">
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-		<main>{children}</main>
+			<main>{children}</main>
 		</div>
 		</div>
     );

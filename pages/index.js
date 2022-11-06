@@ -35,6 +35,11 @@ export default function Home() {
             <h3>Contact Us!</h3>
             <p>Idk why'd you'd want to we're pretty lame ngl.</p>
           </a>
+
+		  <a target="_blank" href="https://vote.stuysu.org/" className='card'>
+			<h3>Vote!</h3>
+			<p>Vote for president/co-presidents of the freshman cacaus! (doesn't have to be us)</p>
+		  </a>
         </div>
       </main>
 
@@ -147,8 +152,18 @@ export default function Home() {
         .card:focus,
         .card:active {
           color: #0070f3;
-          border-color: #0070f3;
+		  box-shadow: 0 1px 20px rgba(0,0,0,0.15);
         }
+
+		.card::after {
+			box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+		}
+
+		.card:hover::after {
+			opacity: 1;
+		}
 
         .card h3 {
           margin: 0 0 1rem 0;
