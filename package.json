@@ -6,7 +6,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "@trendmicro/react-sidenav": "^0.5.0",
+    "@emotion/css": "^11.10.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.12",
+    "@mui/styled-engine-sc": "^5.10.6",
     "classnames": "^2.3.2",
     "font-awesome": "^4.7.0",
     "font-awesome5": "^1.0.5",
@@ -14,9 +21,9 @@
     "jquery": "^3.6.1",
     "next": "^13.0.2",
     "next-sidebar": "^1.1.1",
-    "react": "^18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.56.0"
+    "sass": "^1.56.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
