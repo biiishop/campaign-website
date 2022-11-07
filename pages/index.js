@@ -1,7 +1,10 @@
+import { Launch } from '@mui/icons-material';
 import Head from 'next/head'
+import Layout from '../components/layout';
 
 export default function Home() {
   return (
+	<Layout>
     <div className="container">
       <Head>
         <title>T&S</title>
@@ -153,5 +156,6 @@ hi      </footer>
         }
       `}</style>
     </div>
+	</Layout>
   )
 }

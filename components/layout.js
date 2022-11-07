@@ -13,6 +13,12 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+
+import HomeIcon from '@mui/icons-material/Home';
+import PolicyIcon from '@mui/icons-material/Policy';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -20,6 +26,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import Head from 'next/head';
+import { ContactPage, Policy } from '@mui/icons-material';
 
 const drawerWidth = 240;
 
@@ -89,6 +96,8 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 );
 
 function MiniDrawer({ children, home }) {
+  const iconArray = [<HomeIcon />, <PolicyIcon />, <ContactPageIcon />, <InstagramIcon />]
+
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -130,7 +139,7 @@ function MiniDrawer({ children, home }) {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          {['Home', 'Policies', 'Contact Us', 'Socials'].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
@@ -146,32 +155,8 @@ function MiniDrawer({ children, home }) {
                     justifyContent: 'center',
                   }}
                 >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
-                >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {/* {index % 2 === 0 ? <LocalPoliceIcon /> : <MailIcon />} */}
+				  {iconArray[index]}
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
