@@ -97,6 +97,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 function MiniDrawer({ children, home }) {
   const iconArray = [<HomeIcon />, <PolicyIcon />, <ContactPageIcon />, <InstagramIcon />]
+  const hrefArray = ['/', '/policies', '/contact', '/socials']
 
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -141,7 +142,7 @@ function MiniDrawer({ children, home }) {
         <List>
           {['Home', 'Policies', 'Contact Us', 'Socials'].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
-              <ListItemButton
+              <a href={hrefArray[index]}><ListItemButton
                 sx={{
                   minHeight: 48,
                   justifyContent: open ? 'initial' : 'center',
@@ -155,11 +156,11 @@ function MiniDrawer({ children, home }) {
                     justifyContent: 'center',
                   }}
                 >
-                  {/* {index % 2 === 0 ? <LocalPoliceIcon /> : <MailIcon />} */}
 				  {iconArray[index]}
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
+			  </a>
             </ListItem>
           ))}
         </List>
