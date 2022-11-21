@@ -7,13 +7,14 @@ export default function Policies({ policies }) {
 	return (
 		<Layout>
 			<Head>
-				<title>First Post</title>
+				<title>Policies</title>
 			</Head>
-			<ul>
+      {/* <ul>
             {policies.map((policy) => (
               <li key={policy._id}>{policy?.policies}</li>
             ))}
-          </ul>
+          </ul> */}
+      <iframe width="100%" height="1000" src="https://docs.google.com/document/d/e/2PACX-1vTIwCRQU7-TTi19KqZ-gE58c5j0YW1vk_ki69qh1evP6V7vjk1NIsAVxztZlrAHED4C1F1_YSrM3psM/pub?embedded=true"></iframe>
 		</Layout>
 	);
 }
